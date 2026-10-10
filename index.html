@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discord — Raven77</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ============ COLONNE SERVEURS ============ -->
+  <nav class="guilds">
+    <div class="guild guild--home">
+      <span>🏠</span>
+    </div>
+    <div class="guild-sep"></div>
+
+    <div class="guild active" data-server="MNG">
+      <span>M</span>
+      <div class="guild-pill"></div>
+    </div>
+    <div class="guild" data-server="RAVEN">
+      <span>R</span>
+      <div class="guild-pill"></div>
+    </div>
+    <div class="guild" data-server="GLITCH">
+      <span>G</span>
+      <div class="guild-pill"></div>
+    </div>
+    <div class="guild guild--add">
+      <span>+</span>
+    </div>
+  </nav>
+
+  <!-- ============ COLONNE SALONS ============ -->
+  <aside class="channels">
+    <header class="channels-header">
+      <span class="server-name">RAVEN77</span>
+      <span class="server-arrow">▾</span>
+    </header>
+
+    <div class="channels-scroll">
+      <div class="category">
+        <span class="cat-arrow">▾</span>
+        <span>SALONS TEXTE</span>
+        <span class="cat-add">+</span>
+      </div>
+      <a class="channel active" data-channel="general">
+        <span class="ch-hash">#</span> général
+      </a>
+      <a class="channel" data-channel="musique">
+        <span class="ch-hash">#</span> musique
+      </a>
+      <a class="channel" data-channel="wip">
+        <span class="ch-hash">#</span> work-in-progress
+      </a>
+      <a class="channel" data-channel="osu">
+        <span class="ch-hash">#</span> osu!
+      </a>
+
+      <div class="category">
+        <span class="cat-arrow">▾</span>
+        <span>SALONS VOCAUX</span>
+        <span class="cat-add">+</span>
+      </div>
+      <a class="channel voice">
+        <span class="ch-vol">🔊</span> Studio Prod
+      </a>
+      <a class="channel voice">
+        <span class="ch-vol">🔊</span> Chill Zone
+      </a>
+    </div>
+
+    <footer class="user-panel">
+      <div class="user-avatar">R</div>
+      <div class="user-info">
+        <span class="user-name">Raven77</span>
+        <span class="user-status">En ligne</span>
+      </div>
+      <div class="user-actions">
+        <button class="icon-btn" title="Micro">🎤</button>
+        <button class="icon-btn" title="Casque">🎧</button>
+        <button class="icon-btn" title="Paramètres">⚙️</button>
+      </div>
+    </footer>
+  </aside>
+
+  <!-- ============ CHAT ============ -->
+  <main class="chat">
+    <header class="chat-header">
+      <span class="chat-hash">#</span>
+      <span class="chat-name">général</span>
+      <div class="chat-sep"></div>
+      <span class="chat-topic">Bienvenue sur le serveur de Raven77 🖤</span>
+      <div class="chat-actions">
+        <button class="icon-btn">📌</button>
+        <button class="icon-btn">👥</button>
+        <button class="icon-btn">🔍</button>
+      </div>
+    </header>
+
+    <div class="messages" id="messages">
+      <!-- Messages injectés par JS -->
+    </div>
+
+    <div class="composer">
+      <button class="icon-btn composer-add">+</button>
+      <input type="text" id="messageInput" placeholder="Envoyer un message dans #général" autocomplete="off">
+      <div class="composer-actions">
+        <button class="icon-btn">🎁</button>
+        <button class="icon-btn">😀</button>
+        <button class="icon-btn send-btn" id="sendBtn">➤</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- ============ MEMBRES ============ -->
+  <aside class="members">
+    <div class="member-group">
+      <div class="member-cat">EN LIGNE — 4</div>
+      <div class="member">
+        <div class="member-avatar online">R</div>
+        <div class="member-name">Raven77</div>
+        <div class="member-tag">toi</div>
+      </div>
+      <div class="member">
+        <div class="member-avatar online">2</div>
+        <div class="member-name">2D</div>
+      </div>
+      <div class="member">
+        <div class="member-avatar online">K</div>
+        <div class="member-name">Kaosedge</div>
+      </div>
+      <div class="member">
+        <div class="member-avatar idle">T</div>
+        <div class="member-name">Thanatos1</div>
+      </div>
+    </div>
+
+    <div class="member-group">
+      <div class="member-cat">HORS LIGNE — 2</div>
+      <div class="member">
+        <div class="member-avatar offline">S</div>
+        <div class="member-name">sim01</div>
+      </div>
+      <div class="member">
+        <div class="member-avatar offline">F</div>
+        <div class="member-name">femtogo</div>
+      </div>
+    </div>
+  </aside>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
